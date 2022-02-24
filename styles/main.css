@@ -1,3 +1,5 @@
+/* FEIRUZ */
+
 .team {
   color: #14d9c4;
   text-align: center;
@@ -17,3 +19,48 @@
   font-weight: normal;
   color: #54585a;
 }
+
+/* FEIRUZ */
+
+/* PATRICIA */
+
+.rectangle_6 {
+  width: 320px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_copyright {
+  color: #b8b8b9;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.footer_list {
+  list-style: none;
+  width: 200px;
+  height: 100px;
+  padding: 0;
+  margin: 20, 0, 0, 0;
+  font-size: 14px;
+  text-align: center;
+  opacity: 0.75;
+}
+
+.footer_link {
+  text-decoration: none;
+  color: #54585A;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 20px;
+  display:inline-block
+}
+
+.logo_footer {
+  width: 115.9px;
+  height: 45px;
+}
+
+/* PATRICIA */
