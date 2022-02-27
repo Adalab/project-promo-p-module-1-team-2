@@ -1,11 +1,11 @@
 /* :root {
-  font-family: "Open Sans";
+  --title-color: #099d8d
 } */
 
 /* FEIRUZ */
 
 body {
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   margin: 0;
   padding: 0;
 }
@@ -39,10 +39,21 @@ h1 {
   color: white;
 }
 
-.middle_rectangle {
-  width: 100%;
+.rectangle_container {
+  display: flex;
+  flex-wrap: wrap;
   background-color: #b8b8b9;
-  /* opacity: 0.2; */
+  justify-content: center;
+  align-items: center;
+}
+
+.rectangle_item {
+  margin: 0%;
+  padding: 0%;
+  width: 400px;
+  display: block;
+  text-align: center;
+  box-sizing: content-box;
 }
 
 .team {
@@ -84,7 +95,7 @@ h1 {
 
 .footer_copyright {
   color: #b8b8b9;
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-size: 14px;
   text-align: center;
   padding: 30px 0 20px 0;
@@ -102,7 +113,7 @@ h1 {
   text-decoration: none;
   color: #54585a;
   opacity: 0.75;
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-size: 14px;
   font-weight: 600;
   height: 20px;
