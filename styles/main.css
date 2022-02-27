@@ -41,6 +41,8 @@ h1 {
 
 .middle_rectangle {
   width: 100%;
+  background-color: #b8b8b9;
+  /* opacity: 0.2; */
 }
 
 .team {
