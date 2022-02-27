@@ -40,7 +40,7 @@ h1 {
 }
 
 .middle_rectangle {
-  
+  width: 100%;
 }
 
 .team {
@@ -99,7 +99,7 @@ h1 {
   text-decoration: none;
   color: #54585A;
   opacity: 0.75;
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-size: 14px;
   font-weight: 600;
   height: 20px; 
