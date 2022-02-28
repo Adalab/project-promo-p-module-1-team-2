@@ -2,10 +2,10 @@
   --title-color: #099d8d
 } */
 
-* {
+/* * {
   padding: 0;
   margin: 0;
-}
+} */
 
 body {
   font-family: 'Open Sans';
@@ -13,11 +13,16 @@ body {
   padding: 0;
 }
 
+.container {
+  margin: 15px;
+}
+
 /* CRISTINA */
-a {
+.menu_item {
   text-decoration: none;
 }
-h1 {
+
+.h1 {
   display: block;
   background-color: #139e8e;
   color: white;
@@ -42,6 +47,12 @@ h1 {
 }
 .navigation_bar a {
   color: white;
+}
+
+.imagen_banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .team {
@@ -144,45 +155,45 @@ h1 {
   justify-content: center;
 }
 
-.conteiner{
+.conteiner {
   /* text-align: center; */
   padding: 20px 0px;
   text-align: center;
 }
 
-.icon-social{
+.icon-social {
   width: 30px;
   height: 30px;
   margin: 0px;
-  border: none; 
+  border: none;
 }
 
-.redes-sociales{
+.redes-sociales {
   color: #139e8e;
-  justify-content:  center;
+  justify-content: center;
   display: flex;
 }
 
-.redes-sociales a:visited, .redes-sociales a:link {
+.redes-sociales a:visited,
+.redes-sociales a:link {
   color: #139e8e;
   margin: 0px 10px;
 }
 
-.description-team{
+.description-team {
   text-align: center;
   margin: ;
 }
 
-.info{
+.info {
   margin: 15px;
 }
 
-.name{
+.name {
   margin: 15px;
 }
 
-#about-us{
+#about-us {
   margin-top: 15px;
 }
 /* LORENA */
-
