@@ -7,14 +7,11 @@
   --dark-gray: #54585A;
   --cool-gray: #B8B8B9; 
   /* fonts */
-  font-size: 16px
-  --Rubik:fi 'Rubik';
-  --Open-Sans: 'Open Sans';
+  font-size: 16px;
 }
 
 
 body {
-  font-family: 'Open Sans';
   margin: 0;
   padding: 0;
 }
@@ -30,29 +27,35 @@ body {
 
 .h1 {
   display: block;
-  background-color: #139e8e;
-  color: white;
+  background-color: var(--blue-green);
+  color: var(--white);
   text-align: center;
+  justify-content: center;
+  align-items: center;
   padding: 10px;
-  font-size: 13px;
   margin: 0;
-  font-weight: normal;
+  font-family: Rubik;
+  height: 60px;
 }
 .navigation_bar ul {
   text-align: center;
-  background-color: #14d9c4;
+  background-color: var(--aqua);
+  font-size: 15px;
   margin: 0;
   padding: 10px;
+  font-family: Rubik;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
 }
 .navigation_bar li {
-  display: inline;
-  background-color: #14d9c4;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 0 5px;
-  font-size: 11px;
+  background-color: var(--aqua);
+  padding: 0 0px;
+
 }
 .navigation_bar a {
-  color: white;
+  color: var(--white);
 }
 
 .imagen_banner *{
@@ -64,28 +67,29 @@ body {
 }
 
 .team {
-  color: #14d9c4;
+  color: var(--aqua);
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Rubik;
   font-size: 24px;
   font-weight: 600;
+  margin: 0 99.5px 15px 101.5px;
 }
 
 /* /CRISTINA */
 
 /* FEIRUZ */
 .lema {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans';
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
+  color: var(--black);
   text-align: center;
 }
-.texto {
-  font-size: 16px;
+.texto , .info {
+  font-family: 'Open Sans';
+  line-height: 1.88;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: normal;
-  color: #54585a;
+  color: var(--dark-gray);
 }
 
 /* FEIRUZ */
@@ -93,7 +97,7 @@ body {
 .rectangle_container {
   display: flex;
   flex-wrap: wrap;
-  background-color: #b8b8b9;
+  background-color: gainsboro;
   justify-content: center;
   align-items: center;
 }
@@ -105,11 +109,20 @@ body {
   display: block;
   text-align: center;
 }
+
+.subtitles {
+  font-family: Rubik;
+  font-size: 22px;
+  font-weight: 600;  
+  line-height: 2.05;
+  color: var(--blue-green);
+}
+
+
 /* /GRACIA */
 /* PATRICIA */
 
 .rectangle_6 {
-  /* Vista Mobile width: 320px */
   width: 100%;
   box-sizing: border-box;
   display: flex;
@@ -120,7 +133,7 @@ body {
 }
 
 .footer_copyright {
-  color: #b8b8b9;
+  color: var(--cool-gray);
   font-family: 'Open Sans';
   font-size: 14px;
   text-align: center;
@@ -137,7 +150,7 @@ body {
 
 .footer_link {
   text-decoration: none;
-  color: #54585a;
+  color: var(--dark-gray);
   opacity: 0.75;
   font-family: 'Open Sans';
   font-size: 14px;
@@ -177,14 +190,14 @@ body {
 }
 
 .redes-sociales {
-  color: #139e8e;
+  color: var(--blue-green);
   justify-content: center;
   display: flex;
 }
 
 .redes-sociales a:visited,
 .redes-sociales a:link {
-  color: #139e8e;
+  color: var(--blue-green);
   margin: 0px 10px;
 }
 
@@ -198,9 +211,21 @@ body {
 
 .name {
   margin: 15px;
+  font-family: 'Open Sans';
+  font-size: 20px;
+  line-height: 2.25;
+  color: var(--black);
 }
 
 #about-us {
   margin-top: 15px;
 }
 /* LORENA */
+
+.square {
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50% , -50%) rotate(45deg);
