@@ -134,3 +134,55 @@ h1 {
 }
 
 /* /PATRICIA */
+
+/* LORENA */
+
+.imagen {
+  width: 205px;
+  border-radius: 20px;
+  border: solid 5px rgba(0, 0, 0, 0.08);
+  justify-content: center;
+}
+
+.conteiner{
+  /* text-align: center; */
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.icon-social{
+  width: 30px;
+  height: 30px;
+  margin: 0px;
+  border: none; 
+}
+
+.redes-sociales{
+  color: #139e8e;
+  justify-content:  center;
+  display: flex;
+}
+
+.redes-sociales a:visited, .redes-sociales a:link {
+  color: #139e8e;
+  margin: 0px 10px;
+}
+
+.description-team{
+  text-align: center;
+  margin: ;
+}
+
+.info{
+  margin: 15px;
+}
+
+.name{
+  margin: 15px;
+}
+
+#about-us{
+  margin-top: 15px;
+}
+/* LORENA */
+
