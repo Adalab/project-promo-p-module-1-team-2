@@ -99,12 +99,11 @@ body {
 }
 
 .rectangle_item {
-  margin: 0%;
-  padding: 0%;
-  width: 400px;
+  margin: 15px;
+  padding: 0px;
+  width: 320px;
   display: block;
   text-align: center;
-  box-sizing: content-box;
 }
 /* /GRACIA */
 /* PATRICIA */
