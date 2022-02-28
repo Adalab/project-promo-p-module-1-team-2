@@ -49,10 +49,12 @@ body {
   color: white;
 }
 
-.imagen_banner {
+.imagen_banner *{
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 320px;
+  height: 421px;
 }
 
 .team {
