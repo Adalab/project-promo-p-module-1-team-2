@@ -1,11 +1,17 @@
-/* :root {
-  --title-color: #099d8d
-} */
+:root {
+  /* colors */
+  --white: #fff;
+  --black: #000;
+  --blue-green: #099D8D;
+  --aqua: #14D9C4;
+  --dark-gray: #54585A;
+  --cool-gray: #B8B8B9; 
+  /* fonts */
+  font-size: 16px
+  --Rubik: 'Rubik';
+  --Open-Sans: 'Open Sans';
+}
 
-/* * {
-  padding: 0;
-  margin: 0;
-} */
 
 body {
   font-family: 'Open Sans';
