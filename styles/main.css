@@ -139,6 +139,7 @@ body {
 }
 
 .logo_footer {
+  box-sizing: content-box;
   width: 115.9px;
   height: 45px;
   padding: 30px 0 45px 0;
