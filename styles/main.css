@@ -35,6 +35,7 @@ body {
   margin: 0;
   font-family: Rubik;
   height: 60px;
+  opacity: 0, 5;
 }
 .navigation_bar ul {
   text-align: center;
@@ -46,6 +47,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  opacity: 0, 5;
 }
 .navigation_bar li {
   background-color: var(--aqua);
