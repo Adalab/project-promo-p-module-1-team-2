@@ -2,14 +2,13 @@
   /* colors */
   --white: #fff;
   --black: #000;
-  --blue-green: #099D8D;
-  --aqua: #14D9C4;
-  --dark-gray: #54585A;
-  --cool-gray: #B8B8B9; 
+  --blue-green: #099d8d;
+  --aqua: #14d9c4;
+  --dark-gray: #54585a;
+  --cool-gray: #b8b8b9;
   /* fonts */
   font-size: 16px;
 }
-
 
 body {
   margin: 0;
@@ -44,21 +43,19 @@ body {
   margin: 0;
   padding: 10px;
   font-family: Rubik;
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
-  
 }
 .navigation_bar li {
   background-color: var(--aqua);
   padding: 0 0px;
-
 }
 .navigation_bar a {
   color: var(--white);
 }
 
-.imagen_banner *{
+.imagen_banner * {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,14 +76,21 @@ body {
 
 /* FEIRUZ */
 .lema {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 18px;
   font-weight: 600;
   color: var(--black);
-  text-align: center;
+  background-color: white;
+  margin-right: 15px;
+  margin-left: 15px;
+  padding: 15px;
+  top: -30px;
+  position: relative;
+  line-height: 1.39;
 }
-.texto , .info {
-  font-family: 'Open Sans';
+.texto,
+.info {
+  font-family: "Open Sans";
   line-height: 1.88;
   text-align: center;
   color: var(--dark-gray);
@@ -113,11 +117,10 @@ body {
 .subtitles {
   font-family: Rubik;
   font-size: 22px;
-  font-weight: 600;  
+  font-weight: 600;
   line-height: 2.05;
   color: var(--blue-green);
 }
-
 
 /* /GRACIA */
 /* PATRICIA */
@@ -134,7 +137,7 @@ body {
 
 .footer_copyright {
   color: var(--cool-gray);
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 14px;
   text-align: center;
   padding: 30px 0 20px 0;
@@ -152,7 +155,7 @@ body {
   text-decoration: none;
   color: var(--dark-gray);
   opacity: 0.75;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 14px;
   font-weight: 600;
   height: 20px;
@@ -211,7 +214,7 @@ body {
 
 .name {
   margin: 15px;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 20px;
   line-height: 2.25;
   color: var(--black);
@@ -228,5 +231,5 @@ body {
   height: 30px;
   position: absolute;
   left: 50%;
-  transform: translate(-50% , -50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
 }
