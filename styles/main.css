@@ -118,8 +118,8 @@ body {
   color: var(--blue-green);
 }
 
-
 /* /GRACIA */
+
 /* PATRICIA */
 
 .rectangle_6 {
@@ -146,6 +146,7 @@ body {
   padding: 0;
   margin: 0;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .footer_link {
@@ -163,6 +164,15 @@ body {
   width: 115.9px;
   height: 45px;
   padding: 30px 0 45px 0;
+}
+
+.square {
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50% , -50%) rotate(45deg);
 }
 
 /* /PATRICIA */
@@ -222,11 +232,3 @@ body {
 }
 /* LORENA */
 
-.square {
-  background-color: white;
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50% , -50%) rotate(45deg);
-}
