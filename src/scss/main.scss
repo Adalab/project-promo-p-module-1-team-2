@@ -96,7 +96,7 @@ body {
   // background-repeat: no-repeat;
 }
 
-.team {
+.team__title, .about-us__title {
   color: var(--aqua);
   text-align: center;
   font-family: Rubik;
@@ -119,7 +119,7 @@ body {
   position: relative;
   // line-height: 1.39;
 }
-.texto,
+.texto, .team__title-text,
 .info {
   font-family: 'Open Sans';
   line-height: 1.88;
@@ -254,8 +254,8 @@ body {
   color: var(--black);
 }
 
-#about-us {    // EN TEORÍA ESTO NO DEBÍAMOS HACERLO: #id
-  margin-top: 15px;
+.about-us {
+  margin-top: 30px;
 }
 /* LORENA */
 
