@@ -83,12 +83,16 @@ body {
   color: var(--white);
 }
 
-.imagen_banner * {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
+// .imagen_banner * {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   width: 100%;
+// }
+
+// .hero {
+//   height: 421px;
+// }
 
 .team {
   color: var(--aqua);
@@ -102,7 +106,7 @@ body {
 /* /CRISTINA */
 
 /* FEIRUZ */
-.lema {
+.hero__title {
   font-family: 'Open Sans';
   font-size: 18px;
   font-weight: 600;
