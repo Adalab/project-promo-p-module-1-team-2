@@ -35,21 +35,19 @@ body {
 
 
 /* CRISTINA */
-.menu_item {
+.header__list-item {
   text-decoration: none;
   color: var(--white);
+  text-decoration: none;
 }
 /*pastilla de menu fija con un indice de capa alto para asegurar que nada lo superponga*/
-.menu-fijo {
+.header{
   z-index: 99;
   position: fixed;
   width: 100%;
 }
 
-.menu_item {
-  text-decoration: none;
-}
-.h1 {
+.header__title {
   display: block;
   background-color: var(--blue-green-opacidad);
   color: var(--white);
@@ -62,7 +60,7 @@ body {
   height: 60px;
   opacity: 0, 5;
 }
-.menu_bar ul {
+.header__nav ul {
   //ANTES: .navigation_bar
   text-align: center;
   background-color: var(--aqua-opacidad);
@@ -75,11 +73,11 @@ body {
   justify-content: space-around;
   list-style: none;
 }
-.menu_bar li {
+.header__nav li {
   background-color: var(--aqua);
   padding: 0 0px;
 }
-.menu_bar a {
+.header__nav a {
   color: var(--white);
 }
 
