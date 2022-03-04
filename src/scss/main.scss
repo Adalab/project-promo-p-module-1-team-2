@@ -87,8 +87,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 320px;
-  height: 421px;
+  width: 100%;
 }
 
 .team {
@@ -109,8 +108,6 @@ body {
   font-weight: 600;
   color: var(--black);
   background-color: white;
-  // margin-right: 15px;
-  // margin-left: 15px;
   // padding: 15px;
   // top: -30px;
   position: relative;
