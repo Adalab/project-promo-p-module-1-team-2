@@ -11,8 +11,10 @@
   /* colors */
   --white: #fff;
   --black: #000;
-  --blue-green: #099d8d;
+  --blue-green: rgb(9, 159, 144);
+  --blue-green-opacidad: rgba(9, 159, 144, 0.8);
   --aqua: #14d9c4;
+  --aqua-opacidad: rgba(20, 217, 196, 0.8);
   --dark-gray: #54585a;
   --cool-gray: #b8b8b9;
   /* fonts */
@@ -31,6 +33,13 @@ body {
 
 /* CRISTINA */
 
+
+/* CRISTINA */
+.menu_item {
+  text-decoration: none;
+  color: var(--white);
+}
+/*pastilla de menu fija con un indice de capa alto para asegurar que nada lo superponga*/
 .menu-fijo {
   z-index: 99;
   position: fixed;
@@ -40,10 +49,9 @@ body {
 .menu_item {
   text-decoration: none;
 }
-
 .h1 {
   display: block;
-  background-color: var(--blue-green);
+  background-color: var(--blue-green-opacidad);
   color: var(--white);
   text-align: center;
   justify-content: center;
@@ -57,15 +65,14 @@ body {
 .menu_bar ul {
   //ANTES: .navigation_bar
   text-align: center;
-  background-color: var(--aqua);
+  background-color: var(--aqua-opacidad);
   font-size: 15px;
   margin: 0;
-  padding: 10px;
+  padding: 8px 5px 7px;
   font-family: Rubik;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  opacity: 0, 5;
+  justify-content: space-around;
   list-style: none;
 }
 .menu_bar li {
@@ -244,8 +251,7 @@ body {
   color: var(--black);
 }
 
-#about-us {
-  // EN TEORÍA ESTO NO DEBÍAMOS HACERLO: #id
+#about-us {    // EN TEORÍA ESTO NO DEBÍAMOS HACERLO: #id
   margin-top: 15px;
 }
 /* LORENA */
@@ -257,8 +263,4 @@ body {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
-}
-
-@media all and (min-width: 320) {
-  // ¿Creamos media queries aquí?
 }
