@@ -90,9 +90,13 @@ body {
 //   width: 100%;
 // }
 
-// .hero {
-//   height: 421px;
-// }
+.hero {
+  // height: 421px;
+  background-image: url(./assets/images/imagen-grupo-L.png);
+  background-size: cover;
+  // width: 100vw;
+  // background-repeat: no-repeat;
+}
 
 .team {
   color: var(--aqua);
