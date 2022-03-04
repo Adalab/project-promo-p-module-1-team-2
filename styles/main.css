@@ -24,6 +24,7 @@ body {
 /* CRISTINA */
 .menu_item {
   text-decoration: none;
+  color: var(--white);
 }
 /*pastilla de menu fija con un indice de capa alto para asegurar que nada lo superponga*/
 .menu-fijo {
@@ -53,10 +54,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-}
-
-.navigation_bar a {
-  color: var(--white);
+  list-style: none;
 }
 
 .imagen_banner * {
