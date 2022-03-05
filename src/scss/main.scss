@@ -7,6 +7,8 @@
 // @import 'layout/footer';
 // @import 'pages/index';
 
+// los estilos :root van en layout/page
+
 :root {
   /* colors */
   --white: #fff;
@@ -21,26 +23,21 @@
   font-size: 16px;
 }
 
-// body {
-//   margin: 0;
-//   padding: 0;
-// }
+// ¿ponemos un selector de container en cada apartado?
 
 .container {
   border: solid 1px red;
   // margin: 0 15px;
 }
 
-/* CRISTINA */
 
+// los estilos header van en layout/header
 
-/* CRISTINA */
 .header__list-item {
   text-decoration: none;
   color: var(--white);
   text-decoration: none;
 }
-/*pastilla de menu fija con un indice de capa alto para asegurar que nada lo superponga*/
 
 .header{
   z-index: 99;
@@ -63,7 +60,6 @@
 }
 
 .header__nav ul {
-  //ANTES: .navigation_bar
   text-align: center;
   background-color: var(--aqua-opacidad);
   font-size: 15px;
@@ -75,6 +71,7 @@
   justify-content: space-around;
   list-style: none;
 }
+
 .header__nav li {
   background-color: var(--aqua);
   padding: 0 0px;
@@ -83,12 +80,7 @@
   color: var(--white);
 }
 
-// .imagen_banner * {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   width: 100%;
-// }
+// los estilos hero van en layout/hero (TO BE CREATED)
 
 .hero {
 &__image{
@@ -97,14 +89,30 @@
   background-size: cover;
 }
 }
- 
-  // width: 100vw;
-  // background-repeat: no-repeat;
+
+// los estilos team van en layout/team (TO BE CREATED)
+
+.team__title {
+  color: var(--aqua);
+  text-align: center;
+  font-family: Rubik;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.team__text {
+  font-family: 'Open Sans';
+  line-height: 1.88;
+  text-align: center;
+  color: var(--dark-gray);
+  padding: 20px 0
+}
 
 .team{
   &__title--emb{
     border: 1px solid salmon;
-    font-family: OpenSans;
+    font-family: 'Open Sans';
+    color: var(--black);
     font-size: 18px;
     font-weight: 600;
     background-color: white;
@@ -115,50 +123,23 @@
   }
 }
 
-.team__title, .about-us__title {
-  color: var(--aqua);
-  text-align: center;
-  font-family: Rubik;
-  font-size: 24px;
-  font-weight: 600;
-  // margin: 0 99.5px 15px 101.5px;
-}
+// los estilos strengths-weaknesses van en layout/strengths-weaknesses (TO BE CREATED)
 
-/* /CRISTINA */
-
-/* FEIRUZ */
-// .hero__title {
-//   font-family: 'Open Sans';
-//   font-size: 18px;
-//   font-weight: 600;
-//   color: var(--black);
-//   background-color: white;
-//   // padding: 15px;
-//   // top: -30px;
-//   position: relative;
-//   // line-height: 1.39;
-// }
-
-.strengths-weaknesses__text, .team__title-text,
-.about-us__info {
+.strengths-weaknesses__text {
   font-family: 'Open Sans';
   line-height: 1.88;
   text-align: center;
   color: var(--dark-gray);
+  padding: 20px 0
 }
 
-/* FEIRUZ */
-/* GRACIA */
 .strengths-weaknesses {
   display: flex;
   flex-direction: column;
   background-color: gainsboro;
-  // justify-content: center;
-  // align-items: center;
 }
 
 .strengths-weaknesses__article {
-  // margin: 15px;
   padding: 0px;
   display: block;
   text-align: center;
@@ -170,18 +151,24 @@
   font-weight: 600;
   line-height: 2.05;
   color: var(--blue-green);
+  margin-top: 10px;
 }
 
-/* /GRACIA */
+.square {
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
 
-/* PATRICIA */
+// los estilos footer van en layout/footer
 
 .footer {
-  // width: 100%; ----> lo he comentado porque no varía nada, a mi me pasó igual arriba
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  // justify-content: center;
   align-items: center;
   border-top: solid rgba(128, 128, 128, 0.507) 0.75px;
 }
@@ -192,13 +179,10 @@
   font-size: 14px;
   text-align: center;
   padding: 30px 0 20px 0;
-  margin: 0; //GRACIA - ¿Porqué este reset aquí?
 }
 
 .footer__list {
   list-style: none;
-  padding: 0; //GRACIA - ¿Porqué este reset aquí?
-  margin: 0;
   text-align: center;
   text-transform: uppercase;
 }
@@ -221,9 +205,22 @@
   align-items: center;
 }
 
-/* /PATRICIA */
+// los estilos about-us van en layout/about-us (TO BE CREATED)
 
-/* LORENA */
+.about-us__info {
+  font-family: 'Open Sans';
+  line-height: 1.88;
+  text-align: center;
+  color: var(--dark-gray);
+}
+
+.about-us__title {
+  color: var(--aqua);
+  text-align: center;
+  font-family: Rubik;
+  font-size: 24px;
+  font-weight: 600;
+}
 
 .about-us__image {
   width: 205px;
@@ -233,7 +230,6 @@
 }
 
 .about-us__article {
-  /* text-align: center; */
   padding: 20px 0px;
   text-align: center;
 }
@@ -276,14 +272,4 @@
 
 .about-us {
   margin-top: 30px;
-}
-/* LORENA */
-
-.square {
-  background-color: white;
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
 }
