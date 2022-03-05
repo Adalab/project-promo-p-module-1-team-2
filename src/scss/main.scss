@@ -21,14 +21,14 @@
   font-size: 16px;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
+// body {
+//   margin: 0;
+//   padding: 0;
+// }
 
 .container {
   border: solid 1px red;
-  margin: 0 15px;
+  // margin: 0 15px;
 }
 
 /* CRISTINA */
@@ -41,6 +41,7 @@ body {
   text-decoration: none;
 }
 /*pastilla de menu fija con un indice de capa alto para asegurar que nada lo superponga*/
+
 .header{
   z-index: 99;
   position: fixed;
@@ -89,11 +90,28 @@ body {
 // }
 
 .hero {
-  // height: 421px;
-  background-image: url(./assets/images/imagen-grupo-L.png);
+&__image{
+  height: 400px;
+  background-image: url(../images/grupo-foto.png);
   background-size: cover;
+}
+}
+ 
   // width: 100vw;
   // background-repeat: no-repeat;
+
+.team{
+  &__title--emb{
+    border: 1px solid salmon;
+    font-family: OpenSans;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: white;
+    padding: 15px ;
+    margin: 15px 15px 0px 15px;
+    position: relative;
+    top: -60px;
+  }
 }
 
 .team__title, .about-us__title {
@@ -108,17 +126,17 @@ body {
 /* /CRISTINA */
 
 /* FEIRUZ */
-.hero__title {
-  font-family: 'Open Sans';
-  font-size: 18px;
-  font-weight: 600;
-  color: var(--black);
-  background-color: white;
-  // padding: 15px;
-  // top: -30px;
-  position: relative;
-  // line-height: 1.39;
-}
+// .hero__title {
+//   font-family: 'Open Sans';
+//   font-size: 18px;
+//   font-weight: 600;
+//   color: var(--black);
+//   background-color: white;
+//   // padding: 15px;
+//   // top: -30px;
+//   position: relative;
+//   // line-height: 1.39;
+// }
 
 .strengths-weaknesses__text, .team__title-text,
 .about-us__info {
