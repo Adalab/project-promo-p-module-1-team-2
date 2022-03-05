@@ -1,0 +1,68 @@
+// los estilos about-us van en layout/about-us
+
+.about-us__info {
+  font-family: 'Open Sans';
+  line-height: 1.88;
+  text-align: center;
+  color: var(--dark-gray);
+}
+
+.about-us__title {
+  color: var(--aqua);
+  text-align: center;
+  font-family: Rubik;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.about-us__image {
+  width: 205px;
+  border-radius: 20px;
+  border: solid 5px rgba(0, 0, 0, 0.08);
+  justify-content: center;
+}
+
+.about-us__article {
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.icon-social {
+  width: 30px;
+  height: 30px;
+  margin: 0px;
+  border: none;
+}
+
+.about-us__social {
+  color: var(--blue-green);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.about-us__social a:visited,
+.about-us__social a:link {
+  color: var(--blue-green);
+  margin: 0px 10px;
+}
+
+.about-us__description-team {
+  text-align: center;
+}
+
+.about-us__info {
+  margin: 15px;
+}
+
+.about-us__name {
+  margin: 15px;
+  font-family: 'Open Sans';
+  font-size: 20px;
+  line-height: 2.25;
+  color: var(--black);
+}
+
+.about-us {
+  margin-top: 30px;
+}

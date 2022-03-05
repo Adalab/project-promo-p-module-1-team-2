@@ -1,0 +1,9 @@
+// los estilos hero van en components/hero 
+
+.hero {
+    &__image{
+      height: 400px;
+      background-image: url(../images/grupo-foto.png);
+      background-size: cover;
+    }
+    }

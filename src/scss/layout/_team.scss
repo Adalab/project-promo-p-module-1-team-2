@@ -1,0 +1,33 @@
+// los estilos team van en layout/team 
+
+.team__title {
+  color: var(--aqua);
+  text-align: center;
+  font-family: Rubik;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.team__text {
+  font-family: 'Open Sans';
+  line-height: 1.88;
+  text-align: center;
+  color: var(--dark-gray);
+  padding: 20px 0
+}
+
+.team{
+  &__title--emb{
+    // border: 1px solid salmon;
+    font-family: 'Open Sans';
+    color: var(--black);
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 600;
+    background-color: white;
+    padding: 15px ;
+    margin: 15px 15px 0px 15px;
+    position: relative;
+    top: -60px;
+  }
+}
