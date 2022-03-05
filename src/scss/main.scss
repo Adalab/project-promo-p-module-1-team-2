@@ -50,7 +50,7 @@
 
 .header__title {
   display: block;
-  background-color: var(--blue-green-opacidad);
+  background-color: var(--blue-green);
   color: var(--white);
   text-align: center;
   justify-content: center;
@@ -59,8 +59,9 @@
   margin: 0;
   font-family: Rubik;
   height: 60px;
-  opacity: 0, 5;
+  line-height: 40px;
 }
+
 .header__nav ul {
   //ANTES: .navigation_bar
   text-align: center;
