@@ -38,6 +38,16 @@
     text-transform: uppercase;
     line-height: 1.25;
 
+    &-link {
+      text-decoration: none;
+      color: var(--dark-gray);
+      opacity: 0.75;
+      font-family: "Open Sans";
+      font-size: 14px;
+      font-weight: 600;
+      height: 20px;
+    }
+
     @media all and (min-width: 768px) {
       text-align: right;
       margin-right: 45px;
@@ -48,16 +58,6 @@
     @media all and (min-width: 1200px) {
       margin-right: 138px;
     }
-  }
-
-  &__list-link {
-    text-decoration: none;
-    color: var(--dark-gray);
-    opacity: 0.75;
-    font-family: "Open Sans";
-    font-size: 14px;
-    font-weight: 600;
-    height: 20px;
   }
 
   &__logo {
