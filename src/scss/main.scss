@@ -1,266 +1,282 @@
+// Ignorar por ahora:
+// @import 'components/forms';
 // @import 'core/variables';
-// @import 'core/reset';
-// @import 'components/code';
-// @import 'components/links';
-// @import 'layout/page';
-// @import 'layout/header';
-// @import 'layout/footer';
-// @import 'pages/index';
 
-:root {
-  /* colors */
-  --white: #fff;
-  --black: #000;
-  --blue-green: rgb(9, 159, 144);
-  --blue-green-opacidad: rgba(9, 159, 144, 0.8);
-  --aqua: #14d9c4;
-  --aqua-opacidad: rgba(20, 217, 196, 0.8);
-  --dark-gray: #54585a;
-  --cool-gray: #b8b8b9;
-  /* fonts */
-  font-size: 16px;
-}
+@import 'components/hero';
+@import 'core/reset';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/team';
+@import 'layout/strengths';
+@import 'layout/about-us';
+@import 'layout/page';
 
-body {
-  margin: 0;
-  padding: 0;
-}
+@import 'pages/contact';
 
-.container {
-  border: solid 1px red;
-  margin: 0 15px;
-}
+// ¿¿GRACIA, ponemos un selector de container en cada apartado??
 
-/* CRISTINA */
+// .container {
+//   border: solid 1px red;
+//   // margin: 0 15px;
+// }
 
 
-/* CRISTINA */
-.menu_item {
-  text-decoration: none;
-  color: var(--white);
-}
-/*pastilla de menu fija con un indice de capa alto para asegurar que nada lo superponga*/
-.menu-fijo {
-  z-index: 99;
-  position: fixed;
-  width: 100%;
-}
+// los estilos :root van en layout/page 
 
-.menu_item {
-  text-decoration: none;
-}
-.h1 {
-  display: block;
-  background-color: var(--blue-green-opacidad);
-  color: var(--white);
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  margin: 0;
-  font-family: Rubik;
-  height: 60px;
-  opacity: 0, 5;
-}
-.menu_bar ul {
-  //ANTES: .navigation_bar
-  text-align: center;
-  background-color: var(--aqua-opacidad);
-  font-size: 15px;
-  margin: 0;
-  padding: 8px 5px 7px;
-  font-family: Rubik;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  list-style: none;
-}
-.menu_bar li {
-  background-color: var(--aqua);
-  padding: 0 0px;
-}
-.menu_bar a {
-  color: var(--white);
-}
+// :root {
+//   /* colors */
+//   --white: #fff;
+//   --black: #000;
+//   --blue-green: rgb(9, 159, 144);
+//   --blue-green-opacidad: rgba(9, 159, 144, 0.8);
+//   --aqua: #14d9c4;
+//   --aqua-opacidad: rgba(20, 217, 196, 0.8);
+//   --dark-gray: #54585a;
+//   --cool-gray: #b8b8b9;
 
-.imagen_banner * {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 320px;
-  height: 421px;
-}
+//   font-size: 16px;
+// }
 
-.team {
-  color: var(--aqua);
-  text-align: center;
-  font-family: Rubik;
-  font-size: 24px;
-  font-weight: 600;
-  // margin: 0 99.5px 15px 101.5px;
-}
 
-/* /CRISTINA */
+// los estilos header van en layout/header
 
-/* FEIRUZ */
-.lema {
-  font-family: 'Open Sans';
-  font-size: 18px;
-  font-weight: 600;
-  color: var(--black);
-  background-color: white;
-  // margin-right: 15px;
-  // margin-left: 15px;
-  // padding: 15px;
-  // top: -30px;
-  position: relative;
-  // line-height: 1.39;
-}
-.texto,
-.info {
-  font-family: 'Open Sans';
-  line-height: 1.88;
-  text-align: center;
-  color: var(--dark-gray);
-}
+// .header__list-item {
+//   text-decoration: none;
+//   color: var(--white);
+//   text-decoration: none;
+// }
 
-/* FEIRUZ */
-/* GRACIA */
-.rectangle_container {
-  display: flex;
-  flex-direction: column;
-  background-color: gainsboro;
-  // justify-content: center;
-  // align-items: center;
-}
+// .header{
+//   z-index: 99;
+//   position: fixed;
+//   width: 100%;
+// }
 
-.rectangle_item {
-  // margin: 15px;
-  padding: 0px;
-  display: block;
-  text-align: center;
-}
+// .header__title {
+//   display: block;
+//   background-color: var(--blue-green);
+//   color: var(--white);
+//   text-align: center;
+//   justify-content: center;
+//   align-items: center;
+//   padding: 10px;
+//   margin: 0;
+//   font-family: Rubik;
+//   height: 60px;
+//   line-height: 40px;
+// }
 
-.subtitles {
-  font-family: Rubik;
-  font-size: 22px;
-  font-weight: 600;
-  line-height: 2.05;
-  color: var(--blue-green);
-}
+// .header__nav ul {
+//   text-align: center;
+//   background-color: var(--aqua-opacidad);
+//   font-size: 15px;
+//   margin: 0;
+//   padding: 8px 5px 7px;
+//   font-family: Rubik;
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-around;
+//   list-style: none;
+// }
 
-/* /GRACIA */
+// .header__nav li {
+//   background-color: var(--aqua);
+//   padding: 0 0px;
+// }
+// .header__nav a {
+//   color: var(--white);
+// }
 
-/* PATRICIA */
+// los estilos hero van en components/hero 
 
-.rectangle_6 {
-  // width: 100%; ----> lo he comentado porque no varía nada, a mi me pasó igual arriba
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  // justify-content: center;
-  align-items: center;
-  border-top: solid rgba(128, 128, 128, 0.507) 0.75px;
-}
+// .hero {
+// &__image{
+//   height: 400px;
+//   background-image: url(../images/grupo-foto.png);
+//   background-size: cover;
+// }
+// }
 
-.footer_copyright {
-  color: var(--cool-gray);
-  font-family: 'Open Sans';
-  font-size: 14px;
-  text-align: center;
-  padding: 30px 0 20px 0;
-  margin: 0; //GRACIA - ¿Porqué este reset aquí?
-}
+// los estilos team van en layout/team 
 
-.footer_list {
-  list-style: none;
-  padding: 0; //GRACIA - ¿Porqué este reset aquí?
-  margin: 0;
-  text-align: center;
-  text-transform: uppercase;
-}
+// .team__title {
+//   color: var(--aqua);
+//   text-align: center;
+//   font-family: Rubik;
+//   font-size: 24px;
+//   font-weight: 600;
+// }
 
-.footer_link {
-  text-decoration: none;
-  color: var(--dark-gray);
-  opacity: 0.75;
-  font-family: 'Open Sans';
-  font-size: 14px;
-  font-weight: 600;
-  height: 20px;
-}
+// .team__text {
+//   font-family: 'Open Sans';
+//   line-height: 1.88;
+//   text-align: center;
+//   color: var(--dark-gray);
+//   padding: 20px 0
+// }
 
-.logo_footer {
-  box-sizing: content-box;
-  width: 115.9px;
-  height: 45px;
-  padding: 30px 0 45px 0;
-  align-items: center;
-}
+// .team{
+//   &__title--emb{
+//     border: 1px solid salmon;
+//     font-family: 'Open Sans';
+//     color: var(--black);
+//     font-size: 18px;
+//     font-weight: 600;
+//     background-color: white;
+//     padding: 15px ;
+//     margin: 15px 15px 0px 15px;
+//     position: relative;
+//     top: -60px;
+//   }
+// }
 
-/* /PATRICIA */
+// los estilos strengths-weaknesses van en layout/strengths
 
-/* LORENA */
+// .strengths-weaknesses__text {
+//   font-family: 'Open Sans';
+//   line-height: 1.88;
+//   text-align: center;
+//   color: var(--dark-gray);
+//   padding: 20px 0
+// }
 
-.imagen {
-  width: 205px;
-  border-radius: 20px;
-  border: solid 5px rgba(0, 0, 0, 0.08);
-  justify-content: center;
-}
+// .strengths-weaknesses {
+//   display: flex;
+//   flex-direction: column;
+//   background-color: gainsboro;
+// }
 
-.conteiner {
-  /* text-align: center; */
-  padding: 20px 0px;
-  text-align: center;
-}
+// .strengths-weaknesses__article {
+//   padding: 0px;
+//   display: block;
+//   text-align: center;
+// }
 
-.icon-social {
-  width: 30px;
-  height: 30px;
-  margin: 0px;
-  border: none;
-}
+// .strengths-weaknesses__title {
+//   font-family: Rubik;
+//   font-size: 22px;
+//   font-weight: 600;
+//   line-height: 2.05;
+//   color: var(--blue-green);
+//   margin-top: 10px;
+// }
 
-.redes-sociales {
-  color: var(--blue-green);
-  justify-content: center;
-  display: flex;
-  align-items: center;
-}
+// .square {
+//   background-color: white;
+//   width: 30px;
+//   height: 30px;
+//   position: absolute;
+//   left: 50%;
+//   transform: translate(-50%, -50%) rotate(45deg);
+// }
 
-.redes-sociales a:visited,
-.redes-sociales a:link {
-  color: var(--blue-green);
-  margin: 0px 10px;
-}
+// los estilos footer van en layout/footer
 
-.description-team {
-  text-align: center;
-}
+// .footer {
+//   box-sizing: border-box;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   border-top: solid rgba(128, 128, 128, 0.507) 0.75px;
+// }
 
-.info {
-  margin: 15px;
-}
+// .footer__copyright {
+//   color: var(--cool-gray);
+//   font-family: 'Open Sans';
+//   font-size: 14px;
+//   text-align: center;
+//   padding: 30px 0 20px 0;
+// }
 
-.name {
-  margin: 15px;
-  font-family: 'Open Sans';
-  font-size: 20px;
-  line-height: 2.25;
-  color: var(--black);
-}
+// .footer__list {
+//   list-style: none;
+//   text-align: center;
+//   text-transform: uppercase;
+// }
 
-#about-us {    // EN TEORÍA ESTO NO DEBÍAMOS HACERLO: #id
-  margin-top: 15px;
-}
-/* LORENA */
+// .footer__list-link {
+//   text-decoration: none;
+//   color: var(--dark-gray);
+//   opacity: 0.75;
+//   font-family: 'Open Sans';
+//   font-size: 14px;
+//   font-weight: 600;
+//   height: 20px;
+// }
 
-.square {
-  background-color: white;
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
-}
+// .footer__logo {
+//   box-sizing: content-box;
+//   width: 115.9px;
+//   height: 45px;
+//   padding: 30px 0 45px 0;
+//   align-items: center;
+// }
+
+// los estilos about-us van en layout/about-us
+
+// .about-us__info {
+//   font-family: 'Open Sans';
+//   line-height: 1.88;
+//   text-align: center;
+//   color: var(--dark-gray);
+// }
+
+// .about-us__title {
+//   color: var(--aqua);
+//   text-align: center;
+//   font-family: Rubik;
+//   font-size: 24px;
+//   font-weight: 600;
+// }
+
+// .about-us__image {
+//   width: 205px;
+//   border-radius: 20px;
+//   border: solid 5px rgba(0, 0, 0, 0.08);
+//   justify-content: center;
+// }
+
+// .about-us__article {
+//   padding: 20px 0px;
+//   text-align: center;
+// }
+
+// .icon-social {
+//   width: 30px;
+//   height: 30px;
+//   margin: 0px;
+//   border: none;
+// }
+
+// .about-us__social {
+//   color: var(--blue-green);
+//   justify-content: center;
+//   display: flex;
+//   align-items: center;
+// }
+
+// .about-us__social a:visited,
+// .about-us__social a:link {
+//   color: var(--blue-green);
+//   margin: 0px 10px;
+// }
+
+// .about-us__description-team {
+//   text-align: center;
+// }
+
+// .about-us__info {
+//   margin: 15px;
+// }
+
+// .about-us__name {
+//   margin: 15px;
+//   font-family: 'Open Sans';
+//   font-size: 20px;
+//   line-height: 2.25;
+//   color: var(--black);
+// }
+
+// .about-us {
+//   margin-top: 30px;
+// }

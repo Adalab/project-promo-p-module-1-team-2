@@ -1,7 +1,14 @@
-body {
-  padding: 2rem;
-  height: 100vh;
-  background-image: url('../images/bg-adalab.png');
-  background-color: $color-bg;
-  font-family: $font-main;
+// los estilos :root van en layout/page 
+:root {
+  /* colors */
+  --white: #fff;
+  --black: #000;
+  --blue-green: rgb(9, 159, 144);
+  --blue-green-opacidad: rgba(9, 159, 144, 0.8);
+  --aqua: #14d9c4;
+  --aqua-opacidad: rgba(20, 217, 196, 0.8);
+  --dark-gray: #54585a;
+  --cool-gray: #b8b8b9;
+
+  font-size: 16px;
 }
