@@ -9,16 +9,14 @@
 }
 
 .strengths-weaknesses {
-  display: flex;
-  flex-direction: column;
   background-color: gainsboro;
+  
 }
 
-.strengths-weaknesses__article {
-  padding: 0px;
-  display: block;
-  text-align: center;
-}
+
+// .strengths-weaknesses__article {
+  
+// }
 
 .strengths-weaknesses__title {
   font-family: Rubik;
@@ -27,6 +25,7 @@
   line-height: 2.05;
   color: var(--blue-green);
   margin-top: 10px;
+  text-align: center;
 }
 
 .square {
