@@ -1,4 +1,4 @@
-// los estilos team van en layout/team 
+// los estilos team van en layout/team
 
 .team__title {
   color: var(--aqua);
@@ -9,25 +9,39 @@
 }
 
 .team__text {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   line-height: 1.88;
   text-align: center;
   color: var(--dark-gray);
-  padding: 20px 0
+  padding: 20px 0;
 }
 
-.team{
-  &__title--emb{
-    // border: 1px solid salmon;
-    font-family: 'Open Sans';
+.team {
+  &__title--emb {
+    font-family: "Open Sans";
     color: var(--black);
     font-size: 18px;
     line-height: 1.5;
     font-weight: 600;
     background-color: white;
-    padding: 15px ;
+    padding: 15px;
     margin: 15px 15px 0px 15px;
     position: relative;
     top: -60px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .team__title--emb {
+    max-width: 441px;
+    max-height: 80px;
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: translate(0, -45%);
+    margin-left: 15px;
+    // box-sizing: content-box;
+  }
+
+  .team__text {
+    color: #54585ab0;
   }
 }
