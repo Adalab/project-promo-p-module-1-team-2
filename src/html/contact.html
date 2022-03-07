@@ -1,17 +1,62 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet" />  
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/main.css">
     <title>Contacto</title>
 </head>
+
 <body>
     <include src="./partials/header.html"></include>
+    <main class="main-contact">
+        <section class="hero">
+            <div class="hero__image"></div>
+        </section>
+        <article>
+            <h2 class="team__title">CONTACTO</h2>
+            <p class="team__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, cumque provident. Reiciendis incidunt, quae in veniam beatae ipsam perferendis sit! Autem atque dolore molestias deserunt expedita labore nihil commodi aspernatur.
+            </p>
+            <p class="team__text">
+                Todos los campos marcados con * son obligatiorios.
+            </p>
+        </article>
+<fieldset class="fieldset">
+        <form action="https://adalab-server-form.herokuapp.com/" method="POST">
+
+            <legend>Nombre completo *</legend>
+        <div>
+          <!-- <label for="name">Nombre completo *:</label> -->
+          <input id="name" name="nombre" type="text" placeholder="Nombre..." required="required"/>
+        </div>
+        <legend>Email *</legend>
+        <div>
+            <!-- <label for="email">Email:</label> -->
+            <input id="email" name="nombre" type="email" placeholder="nombre.apellidos@mail.com" required="required" />
+          </div>
+
+          <legend>Teléfono</legend>
+          <div>
+            <!-- <label for="phone">Telefono</label> -->
+            <input id="phone" name="phone" type="tel" placeholder="Ej: 123456789" maxlength="9"/>
+          </div>
+
+          <legend>Mensaje *</legend>
+          <div>
+          <!-- <label for="story">Mensaje *</label> -->
+          <textarea name="story" id="story" rows="5" placeholder="¿Qué necesitas?"></textarea>
+        </div>
+
+          <input type="submit" value="Enviar" />
+        </fieldset>
+    </main>
 
     <include src="./partials/footer.html"></include>
 </body>
+
 </html>
