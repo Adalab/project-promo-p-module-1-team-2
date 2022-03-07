@@ -1,0 +1,48 @@
+.about-us__article {
+  padding: 20px 0px;
+  text-align: center;
+  margin-top: 30px;
+
+  &-image {
+    width: 205px;
+    border-radius: 20px;
+    border: solid 5px rgba(0, 0, 0, 0.08);
+    justify-content: center;
+  }
+
+  &-team {
+    text-align: center;
+
+    &-name {
+      margin: 15px;
+      font-family: "Open Sans";
+      font-size: 20px;
+      line-height: 2.25;
+      color: var(--black);
+    }
+
+    &-info {
+      font-family: "Open Sans";
+      line-height: 1.88;
+      text-align: center;
+      color: var(--dark-gray);
+      margin: 15px;
+    }
+
+    &-social {
+      color: var(--blue-green);
+      justify-content: center;
+      display: flex;
+      align-items: center;
+
+      & a:visited,
+      a:link {
+        color: var(--blue-green);
+        margin: 0px 10px;
+      }
+    }
+  }
+}
+
+
+

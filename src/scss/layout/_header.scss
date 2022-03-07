@@ -1,24 +1,17 @@
 // los estilos header van en layout/header
-
-.header__list-item {
-  text-decoration: none;
-  color: var(--white);
-  text-decoration: none;
-}
-
-.header{
+.header {
   z-index: 99;
   position: fixed;
   width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--blue-green);
 }
 
 .header__title {
-  display: block;
-  background-color: var(--blue-green);
   color: var(--white);
   text-align: center;
-  justify-content: center;
-  align-items: center;
   padding: 10px;
   margin: 0;
   font-family: Rubik;
@@ -26,9 +19,8 @@
   line-height: 40px;
 }
 
-.header__nav ul {
+.header__nav {
   text-align: center;
-  background-color: var(--aqua-opacidad);
   font-size: 15px;
   margin: 0;
   padding: 8px 5px 7px;
@@ -36,13 +28,24 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  list-style: none;
 }
 
-.header__nav li {
-  background-color: var(--aqua);
-  padding: 0 0px;
-}
 .header__nav a {
   color: var(--white);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+// mobile
+@media (max-width: 320px) {
+  .header {
+    display: block;
+    background-color: transparent;
+  }
+  .header__title {
+    background-color: var(--blue-green-opacidad);
+  }
+  .header__nav {
+    background-color: var(--aqua-opacidad);
+  }
 }
