@@ -1,14 +1,12 @@
 .container {
   border: solid 1px red;
   margin: 0 15px;
-  display: flex;
-  flex-direction: column;
-
-  @media all and (min-width:768px) {
-    margin: 0 45px;
-  }
+  display: grid;
 
   @media all and (min-width: 768px) {
-    flex-direction: row;
+    margin: 0 45px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 40px;
   }
 }
