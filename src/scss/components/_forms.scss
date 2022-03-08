@@ -9,89 +9,92 @@
 }
 
 .contact__article {
-&-title {
-  color: var(--aqua);
-  text-align: center;
-  font-family: Rubik;
-  font-size: 24px;
-  font-weight: 600;
-  padding-top: 30px;
-}
+  padding: 3%;
+  &-title {
+    color: var(--aqua);
+    text-align: center;
+    font-family: Rubik;
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 30px;
+  }
 
-&-text {
-  font-family: "Open Sans";
-  line-height: 1.88;
-  text-align: center;
-  color: var(--dark-gray);
-  padding: 20px 0;
+  &-text {
+    font-family: "Open Sans";
+    line-height: 1.88;
+    text-align: center;
+    color: var(--dark-gray);
+    padding: 20px 0;
+  }
 }
-}
-
 
 .fieldset {
-    padding: 15px;
-  }
-
-.text-style-1 {
-  color: var(--aqua);
-}
-
-.field,
-.field-massage {
-  margin: 15px 0px 15px 0px;
-  padding: 0px 0px 0px 15px;
-}
-
-.field,
-.field-submit,
-.field-massage {
-  width: auto;
-  height: 45px;
-  border: solid 1px #b8b8b9;
-}
-
-.field-submit {
-  background-color: #099d8d;
-  width: 100%;
-  text-transform: uppercase;
-  color: var(--white);
-  margin-bottom: 60px;
-}
-
-.field-massage {
-  height: 105px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-@media all and (min-width: 768px) {
-  form{
-    padding: 30px 163px 60px 163px;
-  }
-  .contact__article{
-    padding: 30px 163px 60px 163px;
-  }
-
-  .field-submit{
-    width: 206px;
+  padding: 3%;
+  &__form {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+
+    &-field {
+      margin: 15px 0px 15px 0px;
+      padding: 0px 0px 0px 15px;
+      width: auto;
+      height: 45px;
+      border: solid 1px #b8b8b9;
+
+      &-submit {
+        background-color: #099d8d;
+        width: 100%;
+        height: 45px;
+        text-transform: uppercase;
+        color: var(--white);
+        margin-bottom: 60px;
+      }
+
+      &-text-style-1 {
+        color: var(--aqua);
+      }
     }
 
-  .buttom{
-    display: flex;
-    justify-content: right;
+    &-field-message {
+      margin: 15px 0px 15px 0px;
+      padding: 0px 0px 0px 15px;
+    }
   }
 }
 
-@media all and (min-width: 1200px){
-  form{
-    padding: 45px 300px 120px 299px;
+
+@media all and (min-width: 768px) {
+  .contact__article {
+    padding: 0% 10% 0% 10%;
   }
-  .field-submit{
-    width: 278px;
-}
+  
+  .fieldset{
+    &__form {
+      padding: 0% 10% 0% 10%;
+      &-field{
+        &-submit {
+          width: 50%;
+          display: flex;
+          justify-content: center;
+        }
+      }
+      .buttom {
+        display: flex;
+        justify-content: right;
+      }
+    }
+    }
+  }
+
+
+@media all and (min-width: 1200px) {
+  .contact__article {
+    padding: 0% 20% 0% 20%;
+  }
+
+  .fieldset{
+    &__form{
+      padding: 0% 20% 0% 20%;
+    }
+  }
 }

@@ -2,6 +2,7 @@
   padding: 20px 0px;
   text-align: center;
   margin-top: 30px;
+  margin: 0 0.65%;
 
   &-image, &-image-right {
     width: 205px;
@@ -46,6 +47,7 @@
 @media all and (min-width: 768px){
   .about-us__article{
     display: flex;
+    margin: 6%;
     &-image-right{
       order: 1;
     }
