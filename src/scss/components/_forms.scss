@@ -62,6 +62,7 @@
         color: var(--white);
         margin-bottom: 60px;
         border-radius: 4px;
+        font-family: "Open Sans";
       }
 
       &-text-style-1 {
@@ -81,6 +82,12 @@ textarea::placeholder {
   font-family: "Open Sans";
   font-size: 14px;
   color: var(--cool-gray);
+}
+
+.fieldset__form-field-message {
+  height: 105px;
+  padding: 12px 12px;
+  box-sizing: border-box;
 }
 
 
@@ -118,4 +125,7 @@ textarea::placeholder {
       padding: 0% 20% 0% 20%;
     }
   }
+
+
+
 }
