@@ -1,49 +1,98 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet" />  
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/main.css">
     <title>Contacto</title>
 </head>
+
 <body>
     <header class="header">
       <h1 class="header__title">EQUIPO MOLINO</h1>
       <nav class="header__nav">
         <a class="menu_item" href="./index.html#team">EQUIPO</a>
         <a class="menu_item" href="./index.html#about-us">QUIENES SOMOS</a>
-        <a class="menu_item" href="./contacto.html">CONTACTO</a>
+        <a class="menu_item" href="../contact.html">CONTACTO</a>
       </nav>
     </header>
 
+    <section class="banner__contact">
+        <div class="banner__contact-image"></div>
+    </section>
+   <article class="contact__article">
+       <h2 class="contact__article-title">CONTACTO</h2>
+       <p class="contact__article-text">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, cumque provident. Reiciendis incidunt,
+           quae in veniam beatae ipsam perferendis sit! Autem atque dolore molestias deserunt expedita labore nihil
+           commodi aspernatur.
+       </p>
+       <p class="contact__article-text">
+           Todos los campos marcados con * son obligatiorios.
+       </p>
+   </article>
+    <fieldset class="fieldset">
+        <form action="https://adalab-server-form.herokuapp.com/" method="POST">
 
-    <footer class="footer">
-      <!-- <div class="container"> -->
-        <p class="footer__copyright">Equipo Molino © 2022</p>
-        <nav class="footer__nav">
-          <ul class="footer__list">
-            <li>
-              <a class="footer__list-link" href="./index.html#team">Equipo</a>
-            </li>
-            <li>
-              <a class="footer__list-link" href="./index.html#about-us">Quiénes somos</a>
-            </li>
-            <li>
-              <a class="footer__list-link" href="./contact.html">Contacto</a>
-            </li>
-          </ul>
-        </nav>
-        <img
-          class="footer__logo"
-          src="./assets/images/logo-adalab.png"
-          alt="imagen-logo-adalab"
-          title="imagen-logo-adalab"
-        />
-      <!-- </div> -->
-    </footer>
+            <!-- <legend>Nombre completo *</legend> -->
+
+            <label for="name">Nombre completo<span class="text-style-1">*</span></label>
+            <input class="field" id="name" name="nombre" type="text" placeholder="Nombre..." required="required" />
+
+            <!-- <legend>Email *</legend> -->
+
+            <label for="email">Email<span class="text-style-1">*</span></label>
+            <input class="field" id="email" name="nombre" type="email" placeholder="nombre.apellidos@mail.com"
+                required="required" />
+
+
+            <!-- <legend>Teléfono</legend> -->
+
+            <label for="phone">Telefono</label>
+            <input class="field" id="phone" name="phone" type="tel" placeholder="Ej: 123456789" maxlength="9" />
+
+
+            <!-- <legend>Mensaje *</legend> -->
+
+            <label for="story">Mensaje<span class="text-style-1">*</span></label>
+            <textarea class="field-massage" name="story" id="story" rows="5"
+                placeholder="¿Qué necesitas?"></textarea>
+
+
+            <input class="field-submit" type="submit" value="Enviar" />
+        </form>
+    </fieldset>
+</main>
+
+<footer class="footer">
+  <!-- <div class="container"> -->
+    <p class="footer__copyright">Equipo Molino © 2022</p>
+    <nav class="footer__nav">
+      <ul class="footer__list">
+        <li>
+          <a class="footer__list-link" href="./index.html#team">Equipo</a>
+        </li>
+        <li>
+          <a class="footer__list-link" href="./index.html#about-us">Quiénes somos</a>
+        </li>
+        <li>
+          <a class="footer__list-link" href="./contact.html">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+    <img
+      class="footer__logo"
+      src="./assets/images/logo-adalab.png"
+      alt="imagen-logo-adalab"
+      title="imagen-logo-adalab"
+    />
+  <!-- </div> -->
+</footer>
 
 </body>
+
 </html>
