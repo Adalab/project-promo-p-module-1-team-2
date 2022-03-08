@@ -1,7 +1,6 @@
-// los estilos about-us van en layout/about-us
-
 .about-us {
-  margin-top: 30px;
+  padding-top: 30px ;
+  background-color: var(--white);
   &__title {
     color: var(--aqua);
     text-align: center;
@@ -11,3 +10,14 @@
   }
 }
 
+@media all and (min-width: 768px){
+  .about-us {
+    padding: 45px 44px 60px;
+  }
+}
+
+@media all and (min-width: 768px){
+  .about-us {
+    padding: 45px 138px 60px;
+  }
+}

@@ -68,18 +68,30 @@ form {
 }
 
 @media all and (min-width: 768px) {
-  .contact__article,
-  .fieldset {
-    display: flex;
-    align-content: center;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
+  form{
+    padding: 30px 163px 60px 163px;
+  }
+  .contact__article{
+    padding: 30px 163px 60px 163px;
   }
 
-  .contact__title,
-  .contact__text,
-  form {
-    width: 70%;
+  .field-submit{
+    width: 206px;
+    display: flex;
+    justify-content: center;
+    }
+
+  .buttom{
+    display: flex;
+    justify-content: right;
   }
+}
+
+@media all and (min-width: 1200px){
+  form{
+    padding: 45px 300px 120px 299px;
+  }
+  .field-submit{
+    width: 278px;
+}
 }
