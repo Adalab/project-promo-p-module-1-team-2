@@ -1,0 +1,31 @@
+<fieldset class="fieldset">
+    <form action="https://adalab-server-form.herokuapp.com/" method="POST">
+
+        <!-- <legend>Nombre completo *</legend> -->
+
+        <label for="name">Nombre completo<span class="text-style-1">*</span></label>
+        <input class="field" id="name" name="nombre" type="text" placeholder="Nombre..." required="required" />
+
+        <!-- <legend>Email *</legend> -->
+
+        <label for="email">Email<span class="text-style-1">*</span></label>
+        <input class="field" id="email" name="nombre" type="email" placeholder="nombre.apellidos@mail.com"
+            required="required" />
+
+
+        <!-- <legend>Teléfono</legend> -->
+
+        <label for="phone">Telefono</label>
+        <input class="field" id="phone" name="phone" type="tel" placeholder="Ej: 123456789" maxlength="9" />
+
+
+        <!-- <legend>Mensaje *</legend> -->
+
+        <label for="story">Mensaje<span class="text-style-1">*</span></label>
+        <textarea class="field-massage" name="story" id="story" rows="5"
+            placeholder="¿Qué necesitas?"></textarea>
+
+
+        <input class="field-submit" type="submit" value="Enviar" />
+    </form>
+</fieldset>
