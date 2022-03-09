@@ -17,6 +17,10 @@
   font-family: Rubik;
   height: 60px;
   line-height: 40px;
+  a {
+    text-decoration: none;
+    color: white;
+  }
 }
 
 .header__nav {
@@ -53,21 +57,21 @@
 // Propuesta de márgenes para el header
 
 @media (min-width: 768px) {
- .header__title {
-   margin-left: 6.5%;
- }
+  .header__title {
+    margin-left: 6.5%;
+  }
 
   .header__nav {
     margin-right: 6.5%;
-  } 
+  }
 }
 
 @media all and (min-width: 1200px) {
   .header__title {
     margin-left: 10%;
   }
- 
-   .header__nav {
-     margin-right: 10%;
-   } 
- }
+
+  .header__nav {
+    margin-right: 10%;
+  }
+}
