@@ -92,6 +92,10 @@ textarea::placeholder {
   box-sizing: border-box;
 }
 
+.fieldset__box {
+  display: flex;
+  flex-direction: column;
+}
 
 @media all and (min-width: 768px) {
   .contact__article {
@@ -126,5 +130,11 @@ textarea::placeholder {
     &__form {
       padding: 0% 20% 0% 20%;
     }
+  }
+
+  .fieldset__box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 }

@@ -4,8 +4,6 @@
     action="https://formspree.io/f/mrgjkdyq"
     method="POST"
   >
-    <!-- <legend>Nombre completo *</legend> -->
-
     <label class="fieldset__label" for="name"
       >Nombre completo<span class="fieldset__form-field-text-style-1">
         *</span
@@ -20,36 +18,31 @@
       required="required"
     />
 
-    <!-- <legend>Email *</legend> -->
-    <!-- <div class="mailphone"> -->
+    <span class="fieldset__box">
+      
+      <label class="fieldset__label" for="email"
+        >Email<span class="fieldset__form-field-text-style-1"> *</span></label
+      >
+      <input
+        class="fieldset__form-field"
+        id="email"
+        name="nombre"
+        type="email"
+        placeholder="nombre.apellidos@mail.com"
+        required="required"
+      />
 
-    <label class="fieldset__label" for="email"
-      >Email<span class="fieldset__form-field-text-style-1"> *</span></label
-    >
-    <input
-      class="fieldset__form-field"
-      id="email"
-      name="nombre"
-      type="email"
-      placeholder="nombre.apellidos@mail.com"
-      required="required"
-    />
-
-    <!-- <legend>Teléfono</legend> -->
-
-    <label class="fieldset__label" for="phone">Telefono</label>
-    <input
-      class="fieldset__form-field"
-      id="phone"
-      name="phone"
-      type="tel"
-      placeholder="Ej: 123456789"
-      maxlength="9"
-    />
-
-    <!-- </div> -->
-
-    <!-- <legend>Mensaje *</legend> -->
+      
+      <label class="fieldset__label" for="phone">Telefono</label>
+      <input
+        class="fieldset__form-field"
+        id="phone"
+        name="phone"
+        type="tel"
+        placeholder="Ej: 123456789"
+        maxlength="9"
+      />
+    </span>
 
     <label class="fieldset__label" for="story"
       >Mensaje<span class="fieldset__form-field-text-style-1"> *</span></label
