@@ -39,75 +39,41 @@
    </article>
 
     <fieldset class="fieldset">
-      <form
-        class="fieldset__form"
-        action="https://formspree.io/f/mrgjkdyq"
-        method="POST"
-      >
+      <form class="fieldset__form" action="https://formspree.io/f/mrgjkdyq" method="POST">
         <!-- <legend>Nombre completo *</legend> -->
 
-        <label class="fieldset__label" for="name"
-          >Nombre completo<span class="fieldset__form-field-text-style-1">
-            *</span
-          ></label
-        >
-        <input
-          class="fieldset__form-field"
-          id="name"
-          name="nombre"
-          type="text"
-          placeholder="Nombre..."
-          required="required"
-        />
+        <label class="fieldset__label" for="name">Nombre completo<span class="fieldset__form-field-text-style-1">
+            *</span></label>
+        <input class="fieldset__form-field" id="name" name="nombre" type="text" placeholder="Nombre..."
+          required="required" />
 
         <!-- <legend>Email *</legend> -->
-        <!-- <div class="mailphone"> -->
+        <div class="fieldset__label-emailphone">
 
-        <label class="fieldset__label" for="email"
-          >Email<span class="fieldset__form-field-text-style-1"> *</span></label
-        >
-        <input
-          class="fieldset__form-field"
-          id="email"
-          name="nombre"
-          type="email"
-          placeholder="nombre.apellidos@mail.com"
-          required="required"
-        />
+          <label class="fieldset__label-emailphone-email" for="email">Email<span class="fieldset__form-field-text-style-1">
+              *</span></label>
+          <input class="fieldset__form-field" id="email" name="nombre" type="email" placeholder="nombre.apellidos@mail.com"
+            required="required" />
 
-        <!-- <legend>Teléfono</legend> -->
+          <!-- <legend>Teléfono</legend> -->
 
-        <label class="fieldset__label" for="phone">Telefono</label>
-        <input
-          class="fieldset__form-field"
-          id="phone"
-          name="phone"
-          type="tel"
-          placeholder="Ej: 123456789"
-          maxlength="9"
-        />
+          <label class="fieldset__label-emailphone-phone" for="phone">Telefono</label>
+          <input class="fieldset__form-field" id="phone" name="phone" type="tel" placeholder="Ej: 123456789"
+            maxlength="9" />
 
-        <!-- </div> -->
+        </div>
 
         <!-- <legend>Mensaje *</legend> -->
 
-        <label class="fieldset__label" for="story"
-          >Mensaje<span class="fieldset__form-field-text-style-1"> *</span></label
-        >
-        <textarea
-          class="fieldset__form-field-message"
-          name="story"
-          id="story"
-          rows="5"
-          placeholder="¿Qué necesitas?"
-        ></textarea>
+        <label class="fieldset__label" for="story">Mensaje<span class="fieldset__form-field-text-style-1"> *</span></label>
+        <textarea class="fieldset__form-field-message" name="story" id="story" rows="5"
+          placeholder="¿Qué necesitas?"></textarea>
 
         <div class="buttom">
           <input class="fieldset__form-field-submit" type="submit" value="Enviar" />
         </div>
       </form>
     </fieldset>
-
 </main>
 
 <footer class="footer">
