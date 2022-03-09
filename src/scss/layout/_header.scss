@@ -52,22 +52,22 @@
 
 // Propuesta de márgenes para el header
 
-// @media (min-width: 768px) {
-//  .header__title {
-//    margin-left: 45px;
-//  }
+@media (min-width: 768px) {
+ .header__title {
+   margin-left: 6.5%;
+ }
 
-//   .header__nav {
-//     margin-right: 45px;
-//   } 
-// }
+  .header__nav {
+    margin-right: 6.5%;
+  } 
+}
 
-// @media all and (min-width: 1200px) {
-//   .header__title {
-//     margin-left: 138px;
-//   }
+@media all and (min-width: 1200px) {
+  .header__title {
+    margin-left: 10%;
+  }
  
-//    .header__nav {
-//      margin-right: 138px;
-//    } 
-//  }
+   .header__nav {
+     margin-right: 10%;
+   } 
+ }
