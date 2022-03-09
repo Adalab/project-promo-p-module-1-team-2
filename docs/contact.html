@@ -13,7 +13,7 @@
 
 <body>
     <header class="header">
-      <h1 class="header__title">EQUIPO MOLINO</h1>
+      <h1 class="header__title"><a href="./index.html">EQUIPO MOLINO</a></h1>
       <nav class="header__nav">
         <a class="menu_item" href="./index.html#team">EQUIPO</a>
         <a class="menu_item" href="./index.html#about-us">QUIENES SOMOS</a>
@@ -25,7 +25,7 @@
         <div class="banner__contact-image"></div>
     </section>
    <article class="contact__article">
-     <h2 class="contact__article-title">CONTACTO</h2>
+     <h2 class="contact__article-title">Contacto</h2>
      <p class="contact__article-text">
        El cambio empieza aquí. Cuéntanos en qué punto te encuentras y nosotras
        intentaremos dar respuesta a tus necesidades. Para transmitirnos cualquier
@@ -39,31 +39,50 @@
    </article>
 
     <fieldset class="fieldset">
-      <form class="fieldset__form" action="https://formspree.io/f/mrgjkdyq" method="POST">
-        <!-- <legend>Nombre completo *</legend> -->
+      <form
+        class="fieldset__form"
+        action="https://formspree.io/f/mrgjkdyq"
+        method="POST"
+      >
+        <label class="fieldset__label" for="name"
+          >Nombre completo<span class="fieldset__form-field-text-style-1">
+            *</span
+          ></label
+        >
+        <input
+          class="fieldset__form-field"
+          id="name"
+          name="nombre"
+          type="text"
+          placeholder="Nombre..."
+          required="required"
+        />
 
-        <label class="fieldset__label" for="name">Nombre completo<span class="fieldset__form-field-text-style-1">
-            *</span></label>
-        <input class="fieldset__form-field" id="name" name="nombre" type="text" placeholder="Nombre..."
-          required="required" />
+        <span class="fieldset__box">
+          
+          <label class="fieldset__label label_email" for="email"
+            >Email<span class="fieldset__form-field-text-style-1"> *</span></label
+          >
+          <input
+            class="fieldset__form-field box_email"
+            id="email"
+            name="nombre"
+            type="email"
+            placeholder="nombre.apellidos@mail.com"
+            required="required"
+          />
 
-        <!-- <legend>Email *</legend> -->
-        <div class="fieldset__label-emailphone">
-
-          <label class="fieldset__label-emailphone-email" for="email">Email<span class="fieldset__form-field-text-style-1">
-              *</span></label>
-          <input class="fieldset__form-field" id="email" name="nombre" type="email" placeholder="nombre.apellidos@mail.com"
-            required="required" />
-
-          <!-- <legend>Teléfono</legend> -->
-
-          <label class="fieldset__label-emailphone-phone" for="phone">Telefono</label>
-          <input class="fieldset__form-field" id="phone" name="phone" type="tel" placeholder="Ej: 123456789"
-            maxlength="9" />
-
-        </div>
-
-        <!-- <legend>Mensaje *</legend> -->
+          
+          <label class="fieldset__label label_phone" for="phone">Teléfono</label>
+          <input
+            class="fieldset__form-field box_phone"
+            id="phone"
+            name="phone"
+            type="tel"
+            placeholder="Ej: 123456789"
+            maxlength="9"
+          />
+        </span>
 
         <label class="fieldset__label" for="story">Mensaje<span class="fieldset__form-field-text-style-1"> *</span></label>
         <textarea class="fieldset__form-field-message" name="story" id="story" rows="5"
