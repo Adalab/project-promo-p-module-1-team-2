@@ -4,7 +4,8 @@
   margin-top: 30px;
   // margin: 0 0.65%;
 
-  &-image, &-image-right {
+  &-image,
+  &-image-right {
     width: 205px;
     max-height: 205px;
     border-radius: 20px;
@@ -15,7 +16,8 @@
   &-team {
     text-align: center;
 
-    &-name, &-name-right {
+    &-name,
+    &-name-right {
       margin: 15px;
       font-family: "Open Sans";
       font-size: 20px;
@@ -23,14 +25,16 @@
       color: var(--black);
     }
 
-    &-info, &-info-right {
+    &-info,
+    &-info-right {
       font-family: "Open Sans";
       line-height: 1.88;
       color: var(--dark-gray);
       margin: 15px;
     }
 
-    &-social, &-social-right {
+    &-social,
+    &-social-right {
       color: var(--blue-green);
       justify-content: center;
       display: flex;
@@ -45,29 +49,44 @@
   }
 }
 
-@media all and (min-width: 768px){
-  .about-us__article{
+@media all and (min-width: 768px) {
+  .about-us__article {
     display: flex;
     margin: 6%;
-    &-image-right{
+    // width: 70%;
+    &-image-right {
       order: 1;
     }
 
     &-team {
       text-align: left;
-      &-name-right{
+      &-name-right {
         text-align: right;
       }
-      &-info-right{
+      &-info-right {
         text-align: right;
       }
 
       &-social {
         justify-content: flex-start;
-        &-right{
+        &-right {
           justify-content: end;
         }
+      }
     }
   }
+}
+
+@media all and (min-width: 1200px) {
+  .about-us__article {
+    &-team {
+      &-info-right {
+        margin-left: 20%;
+      }
+
+      &-info {
+        margin-right: 20%;
+      }
+    }
   }
 }
