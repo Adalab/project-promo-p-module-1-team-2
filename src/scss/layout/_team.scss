@@ -16,9 +16,13 @@
     color: var(--dark-gray);
     padding: 20px 0;
 
-    
     @media all and (min-width: 768px) {
       color: #54585ab0;
+    }
+
+    @media all and (min-width: 1200px) {
+      width: 50%;
+      margin: auto;
     }
   }
 }
