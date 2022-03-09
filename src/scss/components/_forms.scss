@@ -37,7 +37,6 @@
     @media all and (min-width: 1200px) {
       margin: 0 250px;
     }
-
   }
 }
 
@@ -128,7 +127,7 @@ textarea::placeholder {
 
   .fieldset {
     &__form {
-      padding: 0% 10% 0% 10%;
+      padding: 0% 15% 0% 15%;
       &-field {
         &-submit {
           width: 50%;
