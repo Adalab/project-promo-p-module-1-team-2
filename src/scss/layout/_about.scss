@@ -49,6 +49,15 @@
   }
 }
 
+.about-us__article-team {
+  .linkedin:hover,
+  .mail:hover,
+  .twitter:hover, .github:hover {
+    transform: scale(3) rotate(-360deg);
+    transition: transform 1s;
+  }
+}
+
 @media all and (min-width: 768px) {
   .about-us__article {
     display: flex;
