@@ -17,7 +17,7 @@
 
   &__copyright {
     color: var(--cool-gray);
-    font-family: "Open Sans";
+    font-family: 'Open Sans';
     font-size: 14px;
     text-align: center;
     padding: 30px 0 20px 0;
@@ -42,10 +42,18 @@
       text-decoration: none;
       color: var(--dark-gray);
       opacity: 0.75;
-      font-family: "Open Sans";
+      font-family: 'Open Sans';
       font-size: 14px;
       font-weight: 600;
       height: 20px;
+
+      transition: all 0.3s ease;
+    }
+
+    &-link:hover {
+      background-color: #14d9c52d;
+      padding: 2px 7px;
+      color: #414446;
     }
 
     @media all and (min-width: 768px) {
