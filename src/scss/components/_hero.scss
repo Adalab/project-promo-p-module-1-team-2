@@ -2,9 +2,12 @@
 
 .hero {
   &__image{
-    height: 400px;
     background-image: url(../images/grupo-L.png);
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position-y: 20%;;
+    background-position-x: 70%;
+    height: 421px;
   }
 
   &__motto {
@@ -20,10 +23,17 @@
     top: -60px;
     margin-left: 6.5%;
 
+    &--special {
+      font-size: 14px;
+    }
+
     @media all and (min-width: 768px) {
       max-width: 441px;
       background-color: rgba(255, 255, 255, 0.8);
       transform: translate(0, -45%);
+      padding-left: 30px;
+      padding-right: 30px;
+      box-sizing: content-box;
     }
 
     @media all and (min-width: 1200px) {
