@@ -20,7 +20,13 @@
   a {
     text-decoration: none;
     color: white;
+    transition-duration: 0.1s;
+
+    &:hover{
+      color: var(--dark-gray);
+    }
   }
+
 }
 
 .header__nav {
@@ -32,12 +38,20 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+
 }
 
 .header__nav a {
   color: var(--white);
   text-decoration: none;
   margin: 0 10px;
+}
+
+.menu__item {
+  transition-duration: 0.1s;
+}
+.menu__item:hover {
+  color: var(--dark-gray);
 }
 
 // mobile
