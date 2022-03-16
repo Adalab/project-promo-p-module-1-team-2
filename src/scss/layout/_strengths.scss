@@ -1,9 +1,9 @@
 // los estilos strengths-weaknesses van en layout/strengths
 .strengths-weaknesses {
   background-color: gainsboro;
-  
+
   &__text {
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     line-height: 1.88;
     text-align: center;
     color: var(--dark-gray);
@@ -12,16 +12,16 @@
 
   &__title {
     font-family: Rubik;
-  font-size: 22px;
-  font-weight: 600;
-  line-height: 2.05;
-  color: var(--blue-green);
-  margin-top: 20px;
-  text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 2.05;
+    color: var(--blue-green);
+    margin-top: 20px;
+    text-align: center;
   }
 }
 // .strengths-weaknesses__article {
-  
+
 // }
 
 .square {

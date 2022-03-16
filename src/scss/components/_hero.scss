@@ -1,12 +1,11 @@
-// los estilos hero van en components/hero 
+// los estilos hero van en components/hero
 
 .hero {
-  &__image{
-    background-image: url(../images/grupo-L.png);
+  &__image {
+    background-image: url(../images/image-molino.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: 20%;;
-    background-position-x: 70%;
+    background-attachment: relative;
     height: 421px;
   }
 

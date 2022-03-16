@@ -2,7 +2,6 @@
   padding: 20px 0px;
   text-align: center;
   margin-top: 30px;
-  // margin: 0 0.65%;
 
   &-image,
   &-image-right {
@@ -52,7 +51,8 @@
 .about-us__article-team {
   .linkedin:hover,
   .mail:hover,
-  .twitter:hover, .github:hover {
+  .twitter:hover,
+  .github:hover {
     transform: scale(3) rotate(-360deg);
     transition: transform 1s;
   }
@@ -62,7 +62,6 @@
   .about-us__article {
     display: flex;
     margin: 6%;
-    // width: 70%;
     &-image-right {
       order: 1;
     }

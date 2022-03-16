@@ -1,5 +1,5 @@
 .about-us {
-  padding-top: 30px ;
+  padding-top: 30px;
   background-color: var(--white);
   &__title {
     color: var(--aqua);
@@ -10,13 +10,13 @@
   }
 }
 
-@media all and (min-width: 768px){
+@media all and (min-width: 768px) {
   .about-us {
     padding: 45px 44px 60px;
   }
 }
 
-@media all and (min-width: 1200px){
+@media all and (min-width: 1200px) {
   .about-us {
     padding: 45px 138px 60px;
   }

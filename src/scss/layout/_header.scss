@@ -22,11 +22,10 @@
     color: white;
     transition-duration: 0.1s;
 
-    &:hover{
+    &:hover {
       color: var(--dark-gray);
     }
   }
-
 }
 
 .header__nav {
@@ -38,7 +37,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-
 }
 
 .header__nav a {
