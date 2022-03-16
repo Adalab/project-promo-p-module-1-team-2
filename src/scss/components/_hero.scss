@@ -3,9 +3,10 @@
 .hero {
   &__image {
     background-image: url(../images/image-molino.jpeg);
+    // background: linear-gradient(0deg, lightgray, transparent), url(../images/image-molino.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: relative;
+    background-position: center top;
     height: 421px;
   }
 
